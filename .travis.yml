@@ -6,7 +6,7 @@ env:
   - DEV=true
 
 install:
-  - sudo pip install http://jandy.io/jandy-python.zip
+  - sudo pip install http://dev.jandy.io/jandy-python.zip
 
 script:
   - gradle uploadArchives
