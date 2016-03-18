@@ -2,9 +2,12 @@ language: java
 jdk:
   - oraclejdk8
 
+env:
+  - DEV=true
+
 install:
   - sudo pip install http://jandy.io/jandy-python.zip
 
 script:
   - gradle uploadArchives
-  - jandy java -jar target/recursivesample-1.0-SNAPSHOT.jar 20
+  - jandy
